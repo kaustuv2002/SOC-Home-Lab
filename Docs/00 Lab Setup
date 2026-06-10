@@ -8,15 +8,16 @@ AttackerKali      Linux 2026.x                     Offensive toolset (Nmap, Meta
 TargetWindows     10/11 Home edition               For exploitation/persistenceDefender
 Ubuntu Server     24.04                            Wazuh Manager & Indexer (SIEM)
 
+
 ### Kali Linux
-![KaliSetup](https://raw.githubusercontent.com/kaustuv2002/SOC-Home-Lab/main/image/kali.png)
+![KaliSetup](../image/kali.png)
 
 ### Ubuntu Server
-![UbuntuSetup](https://raw.githubusercontent.com/kaustuv2002/SOC-Home-Lab/main/image/Ubuntu.png)
+![UbuntuSetup](../image/Ubuntu.png)
 
 ### Ubuntu with Wazuh
-![Wazuh](https://raw.githubusercontent.com/kaustuv2002/SOC-Home-Lab/main/image/wazuh.png)
+![Wazuh](../image/wazuh.png)
 
 ### Windows
-![Windows](https://raw.githubusercontent.com/kaustuv2002/SOC-Home-Lab/main/image/window.png)
+![Windows](../image/window.png)
 
