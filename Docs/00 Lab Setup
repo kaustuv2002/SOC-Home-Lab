@@ -8,3 +8,6 @@ AttackerKali      Linux 2026.x                     Offensive toolset (Nmap, Meta
 TargetWindows     10/11 Home edition               For exploitation/persistenceDefender
 Ubuntu Server     24.04                            Wazuh Manager & Indexer (SIEM)
 
+
+Kali Linux
+![Kali Linux Setup](Images/install kali and ubuntu.png)
