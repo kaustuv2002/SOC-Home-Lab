@@ -6,10 +6,3 @@ Lab Architecture
 2) Defender (SIEM): Wazuh Manager & Indexer (Ubuntu Server).
 3) Attacker (Red Team): Kali Linux.
 4) Network: Isolated Host-Only virtual network.
-
-Attack Lifecycle (Case Studies)
-Each phase below is a deep dive into an attack technique, its detection, and the subsequent hardening.
-
-
-Phase               Technique                      MITRE-ID 
-Reconnaissance      Network Scanning (Nmap)        T1046
