@@ -1,0 +1,10 @@
+The objective of this lab is to create a secure, isolated, and highly visible environment for Red/Blue team exercises. The environment is designed to mirror a corporate network where the defender (Wazuh) has full visibility into the target (Windows) via advanced logging.
+
+
+Infrastructure Design
+The environment consists of three virtualized nodes interconnected via an isolated virtual network (Internal/Host-Only), preventing accidental traffic leakage to the host network.
+Role                 OS                            Purpose
+AttackerKali      Linux 2026.x                     Offensive toolset (Nmap, Metasploit, etc.)
+TargetWindows     10/11 Home edition               For exploitation/persistenceDefender
+Ubuntu Server     24.04                            Wazuh Manager & Indexer (SIEM)
+
