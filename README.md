@@ -1,2 +1,15 @@
-# SOC-Home-Lab
-This project is a comprehensive Red vs. Blue team simulation designed to demonstrate the full lifecycle of an attack and the corresponding defensive detection and analysis process.
+Project Summary
+This project demonstrates a simulated Red vs. Blue team engagement. Using a virtualized environment, I performed offensive security maneuvers to test my ability to detect, analyze, and mitigate threats as a Security Operations Center (SOC) analyst. The goal was to build a "job-ready" lab that emphasizes Detection Engineering and MITRE ATT&CK alignment.
+
+Lab Architecture
+1) Target (Victim): Windows 10/11 Enterprise (Hardened with Sysmon).
+2) Defender (SIEM): Wazuh Manager & Indexer (Ubuntu Server).
+3) Attacker (Red Team): Kali Linux.
+4) Network: Isolated Host-Only virtual network.
+
+Attack Lifecycle (Case Studies)
+Each phase below is a deep dive into an attack technique, its detection, and the subsequent hardening.
+
+
+Phase               Technique                      MITRE-ID 
+Reconnaissance      Network Scanning (Nmap)        T1046
