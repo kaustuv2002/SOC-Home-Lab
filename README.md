@@ -9,16 +9,16 @@ Lab Architecture
 
 
 
-Kali Linux
+Kali Linux (Attacker)
 ![KaliSetup](https://github.com/kaustuv2002/SOC-Home-Lab/blob/d8161945649417b64baa8c3cc652f2bc8f6b84c5/image/kali.png)
 
 
 Ubuntu Server
 ![UbuntuSetup](https://github.com/kaustuv2002/SOC-Home-Lab/blob/809fcc63ad14ee40f6e0a2c319bc1f50cb259571/image/Ubuntu.png)
 
-Ubuntu with Wazuh
+Ubuntu with Wazuh (SIEM)
 ![Wazuh](https://github.com/kaustuv2002/SOC-Home-Lab/blob/dad46108ea70b50549b225449beb0da464edfc83/image/wazuh.png)
 
 
-Windows
+Windows (Target)
 ![Windows](https://github.com/kaustuv2002/SOC-Home-Lab/blob/e1a5b3798a3c96ffd674a6868b21eae6f263a1e6/image/window.png)
