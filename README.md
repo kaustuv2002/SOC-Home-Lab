@@ -14,7 +14,7 @@ Kali Linux
 
 
 Ubuntu Server
-![UbuntuSetup](SOC-Home-Lab/image/Ubuntu.png)
+![UbuntuSetup](https://github.com/kaustuv2002/SOC-Home-Lab/blob/809fcc63ad14ee40f6e0a2c319bc1f50cb259571/image/Ubuntu.png)
 
 Ubuntu with Wazuh
 ![Wazuh](https://github.com/kaustuv2002/SOC-Home-Lab/blob/dad46108ea70b50549b225449beb0da464edfc83/image/wazuh.png)
