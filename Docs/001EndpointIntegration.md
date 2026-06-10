@@ -7,6 +7,7 @@ The Wazuh agent acts as the collector that forwards security events to the SIEM.
 Procedure:
 Agent Installation: Downloaded the Windows MSI package from the Wazuh Dashboard (under Agents > Deploy new agent).
 ![Agent](https://github.com/kaustuv2002/SOC-Home-Lab/blob/47186ead8f071b0d6d0ad6e940f857dc749a1833/image/installAgent.png)
+
 Registration & Service Startup:
 Execute the registration script provided by the Wazuh Dashboard within an Administrative PowerShell session.
 Start the Wazuh service: use command NET start wazuh
@@ -17,12 +18,12 @@ Verified the service is active:
 Sysmon Telemetry Deployment
 Sysmon is critical for detecting advanced post-exploitation techniques that native Windows logs often miss.
 ![sysmoninstall](https://github.com/kaustuv2002/SOC-Home-Lab/blob/d99646412d511fc1efc712d0162586b2841fca2b/image/sysmon.png)
+
 Installation:
 Installation: Downloaded Sysmon and a hardened sysmonconfig.xml (e.g., SwiftOnSecurity). Installed via PowerShell:
-PowerShell
-.\Sysmon64.exe -accepteula -i sysmonconfig.xml
-Wazuh Integration: Configured the ossec.conf file on the Windows agent to ingest Sysmon logs:
+Use Command: .\Sysmon64.exe -accepteula -i sysmonconfig.xml
 
+Wazuh Integration: Configured the ossec.conf file on the Windows agent to ingest Sysmon logs:
 XML
 <localfile>
   <location>Microsoft-Windows-Sysmon/Operational</location>
