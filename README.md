@@ -8,4 +8,4 @@ Lab Architecture
 4) Network: Isolated Host-Only virtual network.
 
 
-![Kali Linux VirtualBox Setup](https://github.com/kaustuv2002/SOC-Home-Lab/blob/b2829c12e97fd208dddbfbe17938f3ae26af9954/image/install.png)
+
