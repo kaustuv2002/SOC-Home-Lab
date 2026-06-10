@@ -1,0 +1,45 @@
+Objective
+To establish secure communication between the Windows endpoint and the Wazuh Manager, and to deploy Sysmon for deep-visibility telemetry.
+
+Windows Agent Enrollment
+The Wazuh agent acts as the collector that forwards security events to the SIEM.
+
+Procedure:
+Agent Installation: Downloaded the Windows MSI package from the Wazuh Dashboard (under Agents > Deploy new agent).
+
+
+Registration: Executed the following via PowerShell (Admin):
+
+PowerShell
+# Registering the agent to the manager
+& "C:\Program Files (x86)\ossec-agent\agent-auth.exe" -m <WAZUH_SERVER_IP> -i <AGENT_ID>
+Service Activation:
+
+PowerShell
+net start wazuh
+3. Sysmon Telemetry Deployment
+Sysmon is critical for detecting advanced post-exploitation techniques that native Windows logs often miss.
+
+Procedure:
+
+Configuration: Utilized a hardened configuration file (e.g., SwiftOnSecurity Sysmon) to reduce noise while capturing high-value events.
+
+Installation:
+
+PowerShell
+.\Sysmon64.exe -accepteula -i sysmonconfig.xml
+Wazuh Integration: Confirmed that the ossec.conf file on the Windows agent is configured to ingest Sysmon logs:
+
+XML
+<localfile>
+  <location>Microsoft-Windows-Sysmon/Operational</location>
+  <log_format>eventchannel</log_format>
+</localfile>
+4. Verification of Telemetry
+To confirm the data is flowing successfully, I queried the Wazuh Indexer:
+
+Test: Navigated to Wazuh > Discover.
+
+Filter: Set filter to agent.name: "Windows-Target" and data.win.eventid: 1 (Process Creation).
+
+Result: Verified that process execution events are successfully being parsed and mapped to the dashboard.
