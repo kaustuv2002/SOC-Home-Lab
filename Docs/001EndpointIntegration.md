@@ -27,9 +27,6 @@ Use Command: .\Sysmon64.exe -accepteula -i sysmonconfig.xml
 
 Wazuh Integration: Configured the ossec.conf file on the Windows agent to ingest Sysmon logs:
 XML
-<localfile>
-  <location>Microsoft-Windows-Sysmon/Operational</location>
-  <log_format>eventchannel</log_format>
-</localfile>
+![ossecconf](https://github.com/kaustuv2002/SOC-Home-Lab/blob/138dcb11f6cce734c1e32d019f6672695d671203/image/check.png)
 
 
