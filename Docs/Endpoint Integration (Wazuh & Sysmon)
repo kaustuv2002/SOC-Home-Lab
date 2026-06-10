@@ -6,7 +6,7 @@ The Wazuh agent acts as the collector that forwards security events to the SIEM.
 
 Procedure:
 Agent Installation: Downloaded the Windows MSI package from the Wazuh Dashboard (under Agents > Deploy new agent).
-![Agent](https://github.com/kaustuv2002/SOC-Home-Lab/blob/524acb510b97038376b531c2a29b55bafbb33875/image/installAgent.png)
+![Agent](Docs/image/installAgent.png)
 
 
 Registration & Service Startup:
