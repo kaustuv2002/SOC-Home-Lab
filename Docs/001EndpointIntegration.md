@@ -12,11 +12,13 @@ Registration & Service Startup:
 Execute the registration script provided by the Wazuh Dashboard within an Administrative PowerShell session.
 Start the Wazuh service: use command NET start wazuh
 Verified the service is active:
+
 ![Agentinstall](https://github.com/kaustuv2002/SOC-Home-Lab/blob/008f85a4edf295bbae9f9c477e64f876bcf58457/image/wazuhagent.png)
 
 
 Sysmon Telemetry Deployment
 Sysmon is critical for detecting advanced post-exploitation techniques that native Windows logs often miss.
+
 ![sysmoninstall](https://github.com/kaustuv2002/SOC-Home-Lab/blob/d99646412d511fc1efc712d0162586b2841fca2b/image/sysmon.png)
 
 Installation:
