@@ -1,5 +1,5 @@
 Objective
-To establish secure communication between the Windows endpoint and the Wazuh Manager, and to deploy Sysmon for deep-visibility telemetry.
+To establish secure communication between the Windows endpoint and the Wazuh Manager, and to deploy Sysmon to achieve deep-visibility telemetry.
 
 Windows Agent Enrollment
 The Wazuh agent acts as the collector that forwards security events to the SIEM.
@@ -7,13 +7,9 @@ The Wazuh agent acts as the collector that forwards security events to the SIEM.
 Procedure:
 Agent Installation: Downloaded the Windows MSI package from the Wazuh Dashboard (under Agents > Deploy new agent).
 ![Agent](https://github.com/kaustuv2002/SOC-Home-Lab/blob/47186ead8f071b0d6d0ad6e940f857dc749a1833/image/installAgent.png)
-
-
 Registration & Service Startup:
-Executed the registration script provided by the Wazuh Dashboard in PowerShell (Admin).
-Started the Wazuh service:
-PowerShell
-net start wazuh
+Execute the registration script provided by the Wazuh Dashboard within an Administrative PowerShell session.
+Start the Wazuh service: use command NET start wazuh
 Verified the service is active:
 ![Agentinstall](https://github.com/kaustuv2002/SOC-Home-Lab/blob/008f85a4edf295bbae9f9c477e64f876bcf58457/image/wazuhagent.png)
 
