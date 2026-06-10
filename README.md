@@ -1,5 +1,5 @@
 Project Summary
-This project demonstrates a simulated Red vs. Blue team engagement. Using a virtualized environment, I performed offensive security maneuvers to test my ability to detect, analyze, and mitigate threats as a Security Operations Center (SOC) analyst. The goal was to build a "job-ready" lab that emphasizes Detection Engineering and MITRE ATT&CK alignment.
+This project demonstrates a simulated Red vs. Blue team engagement. Using a virtualized environment, I performed offensive security maneuvers to test my ability to detect, analyze, and mitigate threats as a Security Operations Center (SOC) analyst.
 
 Lab Architecture
 1) Target (Victim): Windows 10/11 Enterprise (Hardened with Sysmon).
