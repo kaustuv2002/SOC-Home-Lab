@@ -30,3 +30,10 @@ XML
 ![ossecconf](https://github.com/kaustuv2002/SOC-Home-Lab/blob/138dcb11f6cce734c1e32d019f6672695d671203/image/check.png)
 
 
+Connection successful
+![connect](https://github.com/kaustuv2002/SOC-Home-Lab/blob/4c946c42bf2cd5070b883bf380bcc6c69072cd59/image/connection%20su.png)
+
+Sysmon Connected successfully
+![Sysmonconnect](https://github.com/kaustuv2002/SOC-Home-Lab/blob/096577798440dc741d6fe19565e6090bc02fa688/image/sys.png)
+
+
