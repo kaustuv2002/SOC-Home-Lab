@@ -29,10 +29,20 @@ Overall Impact: Low (attempt only, no compromise achieved)
 
 Response Actions
 To mitigate the threat and prevent further brute-force attempts, I implemented a SOAR (Security Orchestration, Automation, and Response) workflow using Wazuh Active Response.
-
+Logic: When Rule 92652 is triggered, the Wazuh Manager automatically executes the firewall-drop command on the affected Windows agent.
 Response Strategy: Configured the Wazuh Manager to automatically trigger firewall-drop via Rule ID 92652.
 ![firewall](https://github.com/kaustuv2002/SOC-Home-Lab/blob/ab13beb6647c0d8410383d9597310cf337b399f3/image/fi.png)
 
 
 Implementation:
+Enabled active-response on the Windows agent.
+Updated Wazuh Manager ossec.conf to execute a host-level firewall block upon detection of brute-force patterns.
+![winauto](https://github.com/kaustuv2002/SOC-Home-Lab/blob/ecff03c3a117237756c79efb3d089f33e64e377a/image/win%20automation.png)
+
+
+
+Validation: Re-simulation of the attack resulted in immediate connection refusal after the detection threshold was met.
+![block](https://github.com/kaustuv2002/SOC-Home-Lab/blob/a034d6b692adf63051aea33f2d7c5d24c14e8ee5/image/block.png)
+
+Analyst takeaway: The system moved from a state of 'Constant Attack' to 'Containment.' The spike in 92652 alerts confirms the SIEM identified the brute force, and the subsequent drop in activity validates that our automated firewall block was successful.
 
