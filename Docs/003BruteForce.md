@@ -28,4 +28,11 @@ Overall Impact: Low (attempt only, no compromise achieved)
 
 
 Response Actions
+To mitigate the threat and prevent further brute-force attempts, I implemented a SOAR (Security Orchestration, Automation, and Response) workflow using Wazuh Active Response.
+
+Response Strategy: Configured the Wazuh Manager to automatically trigger firewall-drop via Rule ID 92652.
+![firewall](https://github.com/kaustuv2002/SOC-Home-Lab/blob/ab13beb6647c0d8410383d9597310cf337b399f3/image/fi.png)
+
+
+Implementation:
 
